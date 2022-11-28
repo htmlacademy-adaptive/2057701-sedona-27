@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Александр Галимов](https://up.htmlacademy.ru/adaptive/27/user/2057701).
-* Наставник: `Евгений Котов`.
+* Наставник: [Евгений Котов](https://htmlacademy.ru/profile/evgeniy_kotov).
 
 ---
 
