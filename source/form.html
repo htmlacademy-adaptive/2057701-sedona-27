@@ -14,13 +14,13 @@
           class="vissually-hidden">Открыть меню.</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--current">
+          <li class="site-list__item">
             <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="catalog.html">Фото и видео</a>
           </li>
-          <li class="site-list__item">
+          <li class="site-list__item site-list__item--current">
             <a class="site-list__link" href="form.html">Форма Отзыва</a>
           </li>
           <li class="site-list__item">
@@ -122,8 +122,8 @@
           <fieldset class="form__landmark">
             <legend class="form__legend">Опишите свои эмоции:</legend>
             <label class="form__label" for="feeling"></label>
-            <input class="form__input field" type="text" name="emotions" id="feeling"
-              placeholder="Опишите подробно все свои восторги">
+            <textarea class="form__input field" name="emotions" cols="30" rows="10" id="feeling"
+              placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
           <button class="form__feedback-button button">ОТПРАВИТЬ ОТЗЫВ</button>
           <span class="form__note">* — обязательные поля</span>
@@ -135,19 +135,19 @@
     <h2 class="visually-hidden">Социальные сети.</h2>
     <div class="main-footer__wrapper">
       <div class="main-footer__social social">
-        <a href="#" class="social__title">#visitSedona</a>
+        <a class="social__title" href="#">#visitSedona</a>
         <ul class="social__list">
           <li class="social__item">
             <span class="visually-hidden">Vkontakte.</span>
-            <a class="social_link social__link--vkontakte" href="https://vk.com/htmlacademy"></a>
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"></a>
           </li>
           <li class="social__item">
             <span class="visually-hidden">Telegram.</span>
-            <a class="social_link social__link--telegram" href="https://t.me/htmlacademy"></a>
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy"></a>
           </li>
           <li class="social__item">
             <span class="visually-hidden">Youtube.</span>
-            <a class="youtube-button social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"></a>
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"></a>
           </li>
         </ul>
       </div>

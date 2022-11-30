@@ -6,7 +6,7 @@
 </head>
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo" href="index.html" >
+    <a class="main-header__logo" href="index.html">
       <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Логотип сайта Седона.">
     </a>
     <nav class="main-nav">
@@ -14,10 +14,10 @@
           class="vissually-hidden">Открыть меню.</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--current">
+          <li class="site-list__item">
             <a class="site-list__link" href="index.html">Главная</a>
           </li>
-          <li class="site-list__item">
+          <li class="site-list__item site-list__item--current">
             <a class="site-list__link" href="catalog.html">Фото и видео</a>
           </li>
           <li class="site-list__item">
@@ -45,7 +45,7 @@
     </section>
     <section class="catalog">
       <h2 class="visually-hidden">Каталог видео и фотографий.</h2>
-      <div class="catallog__wrapper">
+      <div class="catalog__wrapper">
         <ul class="catalog__list">
           <li class="catalog__item">
             <a class="catalog__link" href="#">
@@ -96,33 +96,35 @@
     </section>
     <section class="catalog-video">
       <h2 class="visually-hidden">Видеопрезентация.</h2>
-      <h3 class="catalog-video__header">Все еще сомневаетесь?</h3>
-      <p class="catalog-video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
-        очередной раз!</p>
-      <span class="catalog-video__icon"></span>
-      <a class="catalog-video__link" href="#">
-        <img class="catalog-video__image" src="img/video-mobile.jpg" width="280" height="117"
-          alt="Дорога, серпантин, горы.">
-      </a>
+      <div class="catalog-video-wraper">
+        <h3 class="catalog-video__header">Все еще сомневаетесь?</h3>
+        <p class="catalog-video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
+          очередной раз!</p>
+        <span class="catalog-video__icon"></span>
+        <a class="catalog-video__link" href="#">
+          <img class="catalog-video__image" src="img/video-mobile.jpg" width="280" height="117"
+            alt="Дорога, серпантин, горы.">
+        </a>
+      </div>
     </section>
   </main>
   <footer class="main-footer">
     <h2 class="visually-hidden">Социальные сети.</h2>
     <div class="main-footer__wrapper">
       <div class="main-footer__social social">
-        <a class="social__title" href="#" >#visitSedona</a>
+        <a class="social__title" href="#">#visitSedona</a>
         <ul class="social__list">
           <li class="social__item">
             <span class="visually-hidden">Vkontakte.</span>
-            <a class="social_link social__link--vkontakte" href="https://vk.com/htmlacademy"></a>
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"></a>
           </li>
           <li class="social__item">
             <span class="visually-hidden">Telegram.</span>
-            <a class="social_link social__link--telegram" href="https://t.me/htmlacademy"></a>
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy"></a>
           </li>
           <li class="social__item">
             <span class="visually-hidden">Youtube.</span>
-            <a class="youtube-button social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"></a>
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"></a>
           </li>
         </ul>
       </div>
