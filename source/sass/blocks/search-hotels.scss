@@ -1,0 +1,43 @@
+@use "../global/variables";
+@use "../global/mixins";
+@use "../global/colors";
+
+.search-hotels {
+  padding: 38px 0 49px;
+  text-align: center;
+  background-color: colors.$white-color;
+  box-sizing: border-box;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 61px 155px 58px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 61px 371px 66px;
+  }
+}
+
+.search-hotels__wrapper {
+  @include mixins.padding-0-18;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 0;
+  }
+}
+
+.search-hotels__title {
+  margin: 0 0 23px;
+  padding: 0 9px;
+
+  @include mixins.title-m;
+
+  @media (min-width: variables.$tablet-width) {
+    @include mixins.title-tablet-l;
+  }
+}
+
+.search-hotels__description {
+  margin: 0 0 32px;
+  padding: 0 9px;
+  text-transform: uppercase;
+}

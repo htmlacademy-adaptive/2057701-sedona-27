@@ -1,0 +1,41 @@
+@mixin title-m {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+@mixin title-s {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+@mixin title-l {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+@mixin title-tablet-m {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+@mixin title-tablet-l {
+  font-size: 30px;
+  line-height: 36px;
+}
+
+@mixin padding-0-18 {
+  padding: 0 18px;
+}
+
+@mixin padding-0-20 {
+  padding: 0 20px;
+}
