@@ -1,0 +1,123 @@
+@use "../global/variables";
+@use "../global/mixins";
+@use "../global/colors";
+
+.form {
+  padding-bottom: 24px;
+  background-color: colors.$white-color;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 0 60px 64px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 0 120px 64px;
+  }
+}
+
+.form__container {
+  background-color: colors.$white-color;
+
+  @media (min-width: variables.$tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.form__group {
+  margin: 0;
+  padding: 24px 20px;
+  border: none;
+  box-sizing: border-box;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 0 0 48px;
+    width: 100%;
+  }
+}
+
+.form__group:not(:last-of-type) {
+  border-bottom: 1px solid #e5e5e5;
+
+  @media (min-width: variables.$tablet-width) {
+    border-bottom: none;
+  }
+}
+
+.form__group:first-child {
+  border-top: 1px solid #e5e5e5;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 50%;
+    padding: 0 43px 15px 0;
+    border-top: 0;
+    border-right: 1px solid #e5e5e5;
+  }
+}
+
+.form__group:nth-child(2) {
+  @media (min-width: variables.$tablet-width) {
+    width: 50%;
+    padding-left: 26px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding-left: 64px;
+  }
+}
+
+.form__label {
+  display: block;
+  margin-bottom: 1px;
+  text-transform: uppercase;
+}
+
+.form__group input {
+  font-size: 18px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  line-height: 21px;
+  font-weight: 700;
+  color: colors.$black-color;
+}
+
+.form__title {
+  margin: 0 0 20px;
+
+  @include mixins.title-s;
+
+  @media (min-width: variables.$tablet-width) {
+    @include mixins.title-tablet-m;
+  }
+}
+
+.form__comment {
+  width: 100%;
+  padding: 16px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  border: none;
+  background-color: #f2f2f2;
+  box-sizing: border-box;
+}
+
+.form__button-container {
+  padding: variables.$hor-padding-s;
+
+  @media (min-width: variables.$tablet-width) {
+    display: flex;
+    width: 100%;
+    align-items: center;
+
+    * {
+      width: 50%;
+    }
+  }
+}
+
+.form__caption {
+  font-size: 12px;
+  line-height: 21px;
+  text-align: right;
+  color: rgba(51, 51, 51, 0.6);
+}

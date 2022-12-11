@@ -1,0 +1,69 @@
+@use "../global/variables";
+@use "../global/mixins";
+@use "../global/colors";
+
+.hero {
+  padding-top: 90px;
+  padding-bottom: 85px;
+  text-align: center;
+  background-image: url("../img/divider.svg"), url("../img/index/hero_banner_1200x518.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 100%, 50% 25%;
+  background-size: 172%, 285%;
+  background-color: rgba(131, 179, 211, 0.5);
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 77px 0 86px;
+    background-size: 158%, 158%;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 78px 0 84px;
+    background-size: 100%, 100%;
+  }
+
+  &--catalog {
+    padding-top: 53px;
+    padding-bottom: 67px;
+    background-position: 50% 100%, 50% 100%;
+
+    @media (min-width: variables.$tablet-width) {
+      padding: 95px 0 117px;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      padding: 101px 0 114px;
+    }
+  }
+
+  &--form {
+    padding-top: 52px;
+    padding-bottom: 68px;
+    background-position: 50% 100%, 50% 100%;
+
+    @media (min-width: variables.$tablet-width) {
+      padding: 95px 0 117px;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      padding: 101px 0 114px;
+    }
+  }
+}
+
+.hero__wrapper {
+  @include mixins.padding-0-18;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 0;
+  }
+}
+
+.hero--form .hero__wrapper,
+.hero--catalog .hero__wrapper {
+  @include mixins.padding-0-20;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 0;
+  }
+}

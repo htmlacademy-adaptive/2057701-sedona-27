@@ -1,0 +1,33 @@
+@use "../global/variables";
+@use "../global/mixins";
+@use "../global/colors";
+
+.social__list {
+  display: grid;
+  grid-template-columns: 48px 48px 48px;
+  column-gap: 6px;
+  margin: 0 0 40px;
+  justify-content: center;
+  list-style-type: none;
+  padding-inline-start: 0;
+
+  @media (min-width: variables.$tablet-width) {
+    margin: 0 100px 0 0;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin: 0 256px 0 0;
+  }
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  background-color: colors.$primary-color;
+}
+
+.social__icon path {
+  fill: colors.$white-color;
+}

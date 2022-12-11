@@ -1,0 +1,32 @@
+@use "../global/variables";
+@use "../global/mixins";
+@use "../global/colors";
+
+.button {
+  display: inline-block;
+  font-size: 21px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 16px 16px;
+  border: none;
+  transition: all 0.2s ease-in-out;
+
+  &--primary {
+    color: colors.$white-color;
+    background-color: colors.$primary-color;
+  }
+
+  &--search-hotels {
+    width: 100%;
+  }
+
+  &--form {
+    width: 100%;
+    margin-bottom: 3px;
+  }
+}
