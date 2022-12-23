@@ -110,10 +110,58 @@
   @media (min-width: variables.$tablet-width) {
     @include mixins.title-tablet-m;
   }
+
+  &--1 {
+    &::after {
+      content: "— №1 —";
+
+      @include mixins.advantages-title-after;
+    }
+  }
+
+  &--2 {
+    &::after {
+      content: "— №2 —";
+
+      @include mixins.advantages-title-after;
+    }
+  }
+
+  &--3 {
+    &::after {
+      content: "— №3 —";
+
+      @include mixins.advantages-title-after;
+    }
+  }
+
+  &--4 {
+    &::after {
+      content: "— №4 —";
+
+      @include mixins.advantages-title-after;
+    }
+  }
+
+  &--5 {
+    &::after {
+      content: "— №5 —";
+
+      @include mixins.advantages-title-after;
+    }
+  }
 }
 
 .advantages__item--dark .advantages__title {
   color: colors.$white-color;
+
+  &--1::after,
+  &--2::after,
+  &--3::after,
+  &--4::after,
+  &--5::after {
+    color: colors.$white-color;
+  }
 }
 
 .advantages__text {
@@ -191,5 +239,35 @@
 
   @media (min-width: variables.$desktop-width) {
     height: 100%;
+  }
+}
+
+.advantages__item--house {
+  @include mixins.advantages-icon-container;
+
+  &::before {
+    @include mixins.advantages-icon;
+
+    background-image: url("../img/index/icon_house.svg");
+  }
+}
+
+.advantages__item--burger {
+  @include mixins.advantages-icon-container;
+
+  &::before {
+    @include mixins.advantages-icon;
+
+    background-image: url("../img/index/icon_burger.svg");
+  }
+}
+
+.advantages__item--gift {
+  @include mixins.advantages-icon-container;
+
+  &::before {
+    @include mixins.advantages-icon;
+
+    background-image: url("../img/index/icon_gift.svg");
   }
 }
