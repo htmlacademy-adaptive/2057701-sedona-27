@@ -31,6 +31,7 @@
 
 .main-nav__list-item {
   box-sizing: border-box;
+  text-align: center;
 
   @media (min-width: variables.$tablet-width) {
     padding: 0 10px;
