@@ -25,6 +25,8 @@
   justify-content: center;
   align-items: center;
   height: 48px;
+  color: colors.$white-color;
+  fill: colors.$white-color;
   background-color: colors.$primary-color;
   transition: all 0.2s ease-in-out;
   outline: none;
@@ -40,14 +42,6 @@
   &:active {
     background-color: colors.$primary-color-active;
   }
-}
-
-.social__icon {
-  transition: all 0.2s ease-in-out;
-}
-
-.social__icon path {
-  fill: colors.$white-color;
 }
 
 .social__link:active .social__icon {
