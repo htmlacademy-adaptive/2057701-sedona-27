@@ -151,6 +151,7 @@
               <textarea class="form__comment" id="comment" name="comment" placeholder="Опишите подробно все свои восторги"></textarea>
             </fieldset>
             <div class="form__button-container">
+              <span class="visually-hidden">Кнопка отправки отзыва.</span>
               <button class="button button--primary button--form" id="submit" type="submit">Отправить отзыв</button>
               <div class="form__caption">* &mdash; обязательные поля</div>
             </div>
@@ -203,7 +204,7 @@
       <div class="modal-error__wrapper">
         <h2 class="modal-error__title">Что-то пошло не так!</h2>
         <p class="modal-error__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-        <button class="button button--primary button--error" id="error-button" type="button">Ok</button>
+        <button class="button button--primary button--error" id="error-button" type="button"><span class="visually-hidden">Кнопка подтверждения.</span>Ok</button>
       </div>
     </div>
     <!-- модальное окно информационное-->
@@ -214,7 +215,7 @@
           <p class="modal-info__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. <br/>В ближайшее время мы опубликуем его на сайте.</p>
         </div>
         <div class = "modal-info__button-container">
-            <button class="button button--primary button--success" id="success-button" type="button">ЗАКРЫТЬ ОКНО</button>
+            <button aria-label="Кнопка закрыть окно" class="button button--primary button--success" id="success-button" type="button"><span class="visually-hidden">Кнопка закрыть.</span>ЗАКРЫТЬ ОКНО</button>
         </div>
       </div>
     </div>
